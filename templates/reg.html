@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+</head>
+<body>
+
+    <h2>Student Registration</h2>
+
+    <form action="/submit" method="POST">
+        Name:<br>
+        <input type="text" name="name" required><br><br>
+
+        Email:<br>
+        <input type="email" name="email" required><br><br>
+
+        Roll No:<br>
+        <input type="text" name="roll" required><br><br>
+
+        Year:<br>
+        <select name="year" required>
+            <option value="">Select</option>
+            <option value="1">1st Year</option>
+            <option value="2">2nd Year</option>
+            <option value="3">3rd Year</option>
+            <option value="4">4th Year</option>
+        </select><br><br>
+
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>
