@@ -18,10 +18,10 @@ pipeline {
                 echo "Run application in Docker Container"
 
                 // Remove old container if it exists
-                sh "docker rm -f mycontainer || exit(0)"
+                sh "docker rm -f mycontainer || true"
 
                 // Run the new container
-                sh "docker run -d --name mycontainer -p 5001:5000 mypythonflaskapp"
+                sh "docker run -d --name mycontainer -p 5001:5001 mypythonflaskapp"
             }
         }
     }
