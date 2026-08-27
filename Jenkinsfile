@@ -16,7 +16,7 @@ pipeline {
         stage('Run') {
             steps {
                 echo 'Run Docker Container'
-                sh 'docker run -d -p 8080:8080 devops'
+                sh 'docker run -d -p 5000:5000 devops'
             }
         }
     }
